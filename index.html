@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio dos Esportes - Educação Física 6º Ano</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header-principal">
+    <h1>🏃‍♂️ Desafio dos Esportes! ⚽</h1>
+    <p>Testes seus conhecimentos sobre Educação Física</p>
+  </header>
+
+  <main class="container-jogo">
+    <!-- Tela Inicial -->
+    <section id="tela-inicial" class="tela ativa">
+      <h2>Pronto para aceitar o desafio?</h2>
+      <p>Responda se as afirmações sobre esportes, brincadeiras e saúde são <strong>Verdadeiras</strong> ou <strong>Falsas</strong>.</p>
+      <button id="btn-iniciar" class="btn-principal">Começar Jogo! 🚀</button>
+    </section>
+
+    <!-- Tela do Jogo -->
+    <section id="tela-jogo" class="tela">
+      <div class="hud">
+        <div class="hud-item">
+          <span>Pontos:</span>
+          <strong id="pontuacao">0</strong>
+        </div>
+        <div class="hud-item">
+          <span>Questão:</span>
+          <strong id="numero-questao">1/5</strong>
+        </div>
+      </div>
+
+      <div class="card-pergunta">
+        <span id="categoria-tag" class="tag">Educação Física</span>
+        <h3 id="texto-pergunta">Texto da pergunta aqui...</h3>
+      </div>
+
+      <div class="botoes-resposta">
+        <button id="btn-verdadeiro" class="btn-resposta btn-verdadeiro">👍 Verdadeiro</button>
+        <button id="btn-falso" class="btn-resposta btn-falso">👎 Falso</button>
+      </div>
+
+      <div id="feedback" class="feedback oculto"></div>
+    </section>
+
+    <!-- Tela de Finalização -->
+    <section id="tela-final" class="tela">
+      <div class="resultado-box">
+        <div id="icone-resultado" class="icone-final">🏆</div>
+        <h2>Fim de Jogo!</h2>
+        <p id="mensagem-resultado">Você foi incrível!</p>
+        <div class="placar-final">
+          <span>Sua pontuação final:</span>
+          <strong id="pontuacao-final">0</strong>
+        </div>
+        <button id="btn-reiniciar" class="btn-principal">Jogar Novamente 🔄</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido para o 6º Ano do Ensino Fundamental | Educação Física Interativa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
